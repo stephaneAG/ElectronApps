@@ -1,0 +1,20 @@
+{
+  "name": "electronApp",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . MyApp --platform=linux --arch=x64 --version=0.35.1 && echo TEFLOL"
+  },
+  "author": "StephaneAG",
+  "license": "MIT",
+  "dependencies":{
+    "espruino": "0.0.10",
+  },
+  "devDependencies": {
+    "electron-prebuilt": "~0.35.1",
+    "electron-rebuild": "~1.0.2",
+    "electron-packager": "~5.1.1",
+  }
+}

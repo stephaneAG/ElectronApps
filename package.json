@@ -1,0 +1,20 @@
+{
+  "name": "electronApp",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . MyApp --platform=linux --arch=x64 --version=0.35.1"
+  },
+  "author": "StephaneAG",
+  "license": "MIT",
+  "devDependencies": {
+    "electron-prebuilt": "~0.35.1",
+    "electron-rebuild": "~1.0.2",
+    "electron-packager": "~5.1.1",
+    "serialport": "~2.0.5",
+    "serialport-electron": "~1.7.4-electron-0.30.6",
+    "espruino": "0.0.10"
+  }
+}

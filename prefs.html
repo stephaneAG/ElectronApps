@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <p>[Prefs] stuff settings</p>
+    <div>using:</div>
+    <div>NodeJS <script>document.write(process.versions.node)</script>,</div>
+    <div>Chromium <script>document.write(process.versions.chrome)</script>,</div>
+    <div>& Electron <script>document.write(process.versions.electron)</script></div>
+    <!-- the following is to send ipc messages from the prefs window -->
+    <script>
+      var ipc = require('ipc')
+      var button = document.createElement('button')
+      button.textContent = 'Hide'
+      button.addEventListener('click', function(){
+        //ipc.send('hide-prefs')
+        ipc.send('toggle-prefs')
+      })
+      document.body.appendChild(button)
+    </script>
+  </body>
+</html>
